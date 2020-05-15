@@ -9,11 +9,21 @@
 </head>
 
 <body>
-    <form action="">
-        <input type="number" id="numDice">
+        <label for="diceNum">Enter number of dice:</label>
+        <input type="text" name="diceNum" id="diceNum">
 
-        <button onclick="getRolling()">Roll</button>
-    </form>
+        <button onclick="rollDice()">Roll</button>
+        <button onclick="reset()">Reset All (PANIC BUTTON DEPRECIATED)</button>
+        <br>
+        <button onclick="dispRoll()">Show rolls</button>
+
+        <p id="rollDisplay"></p>
+
+        <ol id="dieContainer">
+
+
+        </ol>
+
     <script src="assets\javascript\script.js"></script>
 </body>
 
