@@ -8,11 +8,12 @@ function reset() {
 
 function rollDice() {
     let numDice = document.getElementById("diceNum").value;
+    let diceSides = document.getElementById("diceSides").value
     var container = document.getElementById("dieContainer");
         container.innerHTML = ""
         diceArray = []
     for (var i = 0; i < numDice; i++) {
-        var diceRoll = Math.floor(Math.random() * 6) + 1;
+        var diceRoll = Math.floor(Math.random() * diceSides) + 1;
         diceArray.push(diceRoll)
         console.log(diceArray)
       }
@@ -31,7 +32,7 @@ function rollDice() {
     function dispRoll() {
         let position = 0
         while(position < diceArray.length) {
-            document.getElementById("dieContainer").innerHTML += '<li>' + diceArray[position] + '</li>'
+            document.getElementById("dieContainer").innerHTML += '<li style="border: 5px solid black; width: 20px; padding: 10px;">' + diceArray[position] + '</li>'
             position += 1
         }
     }

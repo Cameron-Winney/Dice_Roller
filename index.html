@@ -9,20 +9,23 @@
 </head>
 
 <body>
-        <label for="diceNum">Enter number of dice:</label>
-        <input type="text" name="diceNum" id="diceNum">
+    <label for="diceNum">Enter number of dice:</label>
+    <input type="text" name="diceNum" id="diceNum">
 
-        <button onclick="rollDice()">Roll</button>
-        <button onclick="reset()">Reset All (PANIC BUTTON DEPRECIATED)</button>
-        <br>
-        <button onclick="dispRoll()">Show rolls</button>
+    <button onclick="rollDice()">Roll</button>
+    <button onclick="reset()">Reset All (PANIC BUTTON DEPRECIATED)</button>
+    <br>
+    <label for="diceSides">What sided dice would you like to use?</label>
+    <input type="text" name="diceSides" id="diceSides">
+    <br>
+    <button onclick="dispRoll()">Show rolls</button>
 
-        <p id="rollDisplay"></p>
+    <p id="rollDisplay"></p>
 
-        <ol id="dieContainer">
+    <ol id="dieContainer">
 
 
-        </ol>
+    </ol>
 
     <script src="assets\javascript\script.js"></script>
 </body>
